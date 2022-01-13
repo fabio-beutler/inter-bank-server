@@ -9,7 +9,7 @@ import routes from './routes'
 createConnection()
   .then(async () => {
     const app = express()
-    const port = 3333
+    const port = process.env.PORT || 3333
 
     app.use(cors())
     app.use(express.json())
