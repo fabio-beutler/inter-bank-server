@@ -13,7 +13,7 @@
     "url": "https://github.com/fariasmateuss/"
   },
   "scripts": {
-    "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "start": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/server.ts",
     "lint": "eslint . --fix --ext .ts",
     "prettier": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js)\" --write",
     "postinstall": "husky install"
