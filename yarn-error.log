@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/fabio/Arloesitech/inter-bank-server/package.json: Unexpected token / in JSON at position 374
+  SyntaxError: /home/fabio/Arloesitech/inter-bank-server/package.json: Unexpected string in JSON at position 1395
       at JSON.parse (<anonymous>)
       at /mnt/c/Users/fabio/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -37,8 +37,7 @@ npm manifest:
       "url": "https://github.com/fariasmateuss/"
     },
     "scripts": {
-      // "build": "tsc --build",
-      "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+      "start": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/server.ts",
       "lint": "eslint . --fix --ext .ts",
       "prettier": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js)\" --write",
       "postinstall": "husky install"
@@ -50,6 +49,8 @@ npm manifest:
       ]
     },
     "devDependencies": {
+    },
+    "dependencies": {
       "@commitlint/cli": "^15.0.0",
       "@commitlint/config-conventional": "^15.0.0",
       "@types/cors": "^2.8.12",
@@ -65,11 +66,9 @@ npm manifest:
       "husky": "^7.0.4",
       "lint-staged": "^12.1.2",
       "prettier": "^2.5.1",
-      "ts-node-dev": "^1.1.8",
       "tsconfig-paths": "^3.12.0",
       "typescript": "^4.5.2"
-    },
-    "dependencies": {
+      "ts-node-dev": "^1.1.8",
       "cors": "^2.8.5",
       "crypto-js": "^4.1.1",
       "express": "^4.17.1",

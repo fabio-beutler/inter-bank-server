@@ -25,6 +25,8 @@
     ]
   },
   "devDependencies": {
+  },
+  "dependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@types/cors": "^2.8.12",
@@ -41,9 +43,7 @@
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
     "tsconfig-paths": "^3.12.0",
-    "typescript": "^4.5.2"
-  },
-  "dependencies": {
+    "typescript": "^4.5.2",
     "ts-node-dev": "^1.1.8",
     "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
